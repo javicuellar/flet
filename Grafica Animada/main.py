@@ -7,6 +7,7 @@ import time
 import threading 
 
 
+
 class MyApp(ft.UserControl):
     def __init__(self, page):
         super().__init__(expand=True)
@@ -218,7 +219,10 @@ class MyApp(ft.UserControl):
             self.update()
             time.sleep(0.3)
 
+
 def main(page: ft.Page):
     page.add(MyApp(page))
+
+
 
 ft.app(target=main)

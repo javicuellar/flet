@@ -1,5 +1,6 @@
 import flet as ft
 
+
 class SpendingApp(ft.Container):
     def __init__(self, page: ft.Page):
         super().__init__(expand=True)
@@ -302,6 +303,7 @@ class SpendingApp(ft.Container):
             ]
         ))
 
+
+
+
 ft.app(target=SpendingApp)
-
-

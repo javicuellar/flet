@@ -1,5 +1,6 @@
-
 import flet as ft 
+
+
 class CustomButton(ft.Container):
     def __init__(self, text, data, on_click):
         super().__init__(expand=True)
@@ -27,6 +28,8 @@ class CustomButton(ft.Container):
         self.content = ft.Text(value=text, color="black", size =20, weight="bold")
         self.alignment = ft.alignment.center
         self.on_click = on_click
+
+
 
 def main(page: ft.Page):
     page.bgcolor = "#21bb8e"
@@ -132,5 +135,7 @@ def main(page: ft.Page):
     )
 
     page.add(content)
+
+
 
 ft.app(target=main)

@@ -6,6 +6,8 @@ import base64
 import threading
 import time 
 
+
+
 class CameraApp(ft.Container):
     def __init__(self, page):
         super().__init__(expand=True)

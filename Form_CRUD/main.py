@@ -2,12 +2,13 @@
 # @autor: Magno Efren
 # Youtube: https://www.youtube.com/c/MagnoEfren
 
-
 import flet as ft 
 from contact_manager import ContactManager
 from fpdf import FPDF
 import pandas as pd
 import datetime
+
+
 
 class PDF(FPDF):
     def header(self):
@@ -298,6 +299,8 @@ def main(page: ft.Page):
     form_ui = FormUi(page)
     form_ui.data.close_connection()
     page.add(FormUi(page))
+
+
 
 
 ft.app(main) 

@@ -5,6 +5,8 @@
 
 import flet as ft 
 
+
+
 class ProductPage(ft.View):
     def __init__(self, page, img_src, title, sub_title, price, rating):
         pass
@@ -40,4 +42,6 @@ class AppShopCoffee(ft.Container):
     def change_position(self, e):
         pass
     
+
+
 ft.app(target=AppShopCoffee)

@@ -4,6 +4,8 @@
 
 import flet as ft
 
+
+
 class PortafolioWeb(ft.Container):
     def __init__(self, page: ft.Page):
         super().__init__()
@@ -164,5 +166,7 @@ class PortafolioWeb(ft.Container):
             self.titulo_resumen.value = "Mis Habilidades"
 
         self.page.update()
+
+
 
 ft.app(target=lambda page: PortafolioWeb(page), view= ft.WEB_BROWSER, assets_dir="assets")
